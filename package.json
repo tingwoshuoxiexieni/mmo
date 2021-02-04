@@ -2,26 +2,23 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://tingwoshuoxiexieni.github.io/mmo",
+  "homepage": "https://tingwoshuoxiexieni.github.io/mmo",
   "author": "Thang",
   "dependencies": {
     "an-array-of-english-words": "^1.3.1",
+    "gh-pages": "^1.0.0",
     "jquery": "^3.2.1",
     "lodash": "^4.17.4",
-    "react": "^16.14.0",
-    "react-dom": "^16.14.0",
-    "react-scripts": "^1.0.14",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-scripts": "1.0.14",
     "socket.io-client": "^2.0.4"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
-  },
-  "devDependencies": {
-    "gh-pages": "^3.1.0"
+    "eject": "react-scripts eject",
+    "deploy": "react-scripts build && gh-pages -d build"
   }
 }
